@@ -1,0 +1,27 @@
+{
+    "name": "rushing/laravel-circuit-spine-data",
+    "description": "The circuit spine's shared value vocabulary: the typed {type, payload} Envelope, Port + PortValidator contract, Graph Node/Edge wire DTOs, Run/NodeRun status enums and records, and the RunContext provenance object. The heavy circuit kernel (scheduling, dispatch, cycle detection) stays private; this is the data surface satellites and hosts share without it.",
+    "type": "library",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0|^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rushing\\CircuitSpineData\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rushing\\CircuitSpineData\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
