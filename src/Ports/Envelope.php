@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Rushing\CircuitSpineData\Ports;
 
 /**
@@ -13,11 +11,11 @@ namespace Rushing\CircuitSpineData\Ports;
  * of the re-base: the envelope is type-tagged so a downstream node, a validator, and a
  * run viewer can all tell a Fragment list from a JSON blob from a scalar.
  */
-final class Envelope
+class Envelope
 {
     public function __construct(
-        public readonly string $type,
-        public readonly mixed $payload,
+        public string $type,
+        public mixed $payload,
     ) {}
 
     public static function of(string $type, mixed $payload): self

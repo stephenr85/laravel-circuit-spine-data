@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Rushing\CircuitSpineData\Graph;
 
 use Rushing\CircuitSpineData\Ports\Port;
@@ -15,7 +13,7 @@ use Rushing\CircuitSpineData\Ports\Port;
  * {@see Port}s let the kernel validate the envelope on the node boundary; omit them and
  * the node is untyped (accept/emit anything).
  */
-final class Node
+class Node
 {
     /**
      * @param  array<string, mixed>  $config  Typed config handed to the capability.
@@ -29,13 +27,13 @@ final class Node
      *                         runaway loop). Counts the re-entries, not the first pass.
      */
     public function __construct(
-        public readonly string $ref,
-        public readonly string $capability,
-        public readonly array $config = [],
-        public readonly ?string $label = null,
-        public readonly ?Port $output = null,
-        public readonly array $inputs = [],
-        public readonly ?string $iterateOver = null,
-        public readonly int $maxLoops = 10,
+        public string $ref,
+        public string $capability,
+        public array $config = [],
+        public ?string $label = null,
+        public ?Port $output = null,
+        public array $inputs = [],
+        public ?string $iterateOver = null,
+        public int $maxLoops = 10,
     ) {}
 }

@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Rushing\CircuitSpineData\Ports;
 
 /**
@@ -10,15 +8,15 @@ namespace Rushing\CircuitSpineData\Ports;
  * Schema via laravel-data-schemas, or raw JSON Schema from an external integrator —
  * and handed to the kernel as a plain array, so the kernel never reflects PHP types.
  */
-final class Port
+class Port
 {
     /**
      * @param  array<string, mixed>  $schema  JSON Schema for the payload (`[]` = accept any payload).
      */
     public function __construct(
-        public readonly string $type,
-        public readonly array $schema = [],
-        public readonly ?string $name = null,
+        public string $type,
+        public array $schema = [],
+        public ?string $name = null,
     ) {}
 
     /**

@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Rushing\CircuitSpineData\Run;
 
 use Rushing\CircuitSpineData\Ports\Envelope;
@@ -11,15 +9,15 @@ use Rushing\CircuitSpineData\Ports\Envelope;
  * runs once per pass and a looping node produces many node-runs per run, each with its
  * own index. For this acyclic slice every node-run is iteration 0.
  */
-final class NodeRun
+class NodeRun
 {
     public function __construct(
-        public readonly string $nodeRef,
-        public readonly NodeRunStatus $status,
-        public readonly ?Envelope $output = null,
-        public readonly ?string $error = null,
-        public readonly int $iteration = 0,
-        public readonly ?string $label = null,
+        public string $nodeRef,
+        public NodeRunStatus $status,
+        public ?Envelope $output = null,
+        public ?string $error = null,
+        public int $iteration = 0,
+        public ?string $label = null,
     ) {}
 
     public function succeeded(): bool

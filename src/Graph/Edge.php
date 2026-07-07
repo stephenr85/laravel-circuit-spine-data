@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Rushing\CircuitSpineData\Graph;
 
 /**
@@ -13,14 +11,14 @@ namespace Rushing\CircuitSpineData\Graph;
  * routes control back to an upstream node to retry/refine and does *not* mistake it for
  * an accidental cycle. A cycle among non-loop edges remains an error.
  */
-final class Edge
+class Edge
 {
     public function __construct(
-        public readonly string $from,
-        public readonly string $to,
-        public readonly ?string $fromPort = null,
-        public readonly ?string $toPort = null,
-        public readonly bool $loop = false,
+        public string $from,
+        public string $to,
+        public ?string $fromPort = null,
+        public ?string $toPort = null,
+        public bool $loop = false,
     ) {}
 
     public static function loopBack(string $from, string $to): self

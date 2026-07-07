@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Rushing\CircuitSpineData\Context;
 
 /**
@@ -12,17 +10,17 @@ namespace Rushing\CircuitSpineData\Context;
  *
  * Immutable: {@see forNode()} returns a per-node copy the scheduler hands to dispatch.
  */
-final class RunContext
+class RunContext
 {
     /**
      * @param  array<string, mixed>  $metadata
      */
     public function __construct(
-        public readonly string $runId,
-        public readonly mixed $actor = null,
-        public readonly ?string $nodeRef = null,
-        public readonly ?string $nodeLabel = null,
-        public readonly array $metadata = [],
+        public string $runId,
+        public mixed $actor = null,
+        public ?string $nodeRef = null,
+        public ?string $nodeLabel = null,
+        public array $metadata = [],
     ) {}
 
     public function forNode(string $ref, ?string $label = null): self

@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Rushing\CircuitSpineData\Ports\Contracts;
 
 use Rushing\CircuitSpineData\Ports\Envelope;
