@@ -1,6 +1,6 @@
 <?php
 
-namespace Rushing\CircuitSpineData\Ports;
+namespace Splicewire\CircuitSpineData\Ports;
 
 /**
  * A typed slot on a node: an envelope `type` name plus the JSON Schema its payload

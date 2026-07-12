@@ -1,6 +1,6 @@
 <?php
 
-namespace Rushing\CircuitSpineData\Graph;
+namespace Splicewire\CircuitSpineData\Graph;
 
 /**
  * A directed wire from one node's output to another node's input, addressed by node

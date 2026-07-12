@@ -1,6 +1,6 @@
 <?php
 
-namespace Rushing\CircuitSpineData\Context;
+namespace Splicewire\CircuitSpineData\Context;
 
 /**
  * Provenance carried through a run, read from one place instead of reconstructed per

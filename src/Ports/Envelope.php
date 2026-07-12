@@ -1,6 +1,6 @@
 <?php
 
-namespace Rushing\CircuitSpineData\Ports;
+namespace Splicewire\CircuitSpineData\Ports;
 
 /**
  * The one value that crosses every node boundary: a `{type, payload}` pair. `type`

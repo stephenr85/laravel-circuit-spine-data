@@ -1,6 +1,6 @@
 <?php
 
-namespace Rushing\CircuitSpineData\Run;
+namespace Splicewire\CircuitSpineData\Run;
 
 /**
  * Outcome of a single node pass. `NeedsReview`/`WaitingForInput` are the HITL seams

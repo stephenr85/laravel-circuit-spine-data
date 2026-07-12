@@ -1,8 +1,8 @@
 <?php
 
-namespace Rushing\CircuitSpineData\Graph;
+namespace Splicewire\CircuitSpineData\Graph;
 
-use Rushing\CircuitSpineData\Ports\Port;
+use Splicewire\CircuitSpineData\Ports\Port;
 
 /**
  * A vertex in a circuit graph. Generically named to avoid colliding with a host's

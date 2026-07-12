@@ -9,12 +9,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Rushing\\CircuitSpineData\\": "src/"
+            "Splicewire\\CircuitSpineData\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rushing\\CircuitSpineData\\Tests\\": "tests/"
+            "Splicewire\\CircuitSpineData\\Tests\\": "tests/"
         }
     },
     "extra": {

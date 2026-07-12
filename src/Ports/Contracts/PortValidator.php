@@ -1,10 +1,10 @@
 <?php
 
-namespace Rushing\CircuitSpineData\Ports\Contracts;
+namespace Splicewire\CircuitSpineData\Ports\Contracts;
 
-use Rushing\CircuitSpineData\Ports\Envelope;
-use Rushing\CircuitSpineData\Ports\Port;
-use Rushing\CircuitSpineData\Ports\PortValidationException;
+use Splicewire\CircuitSpineData\Ports\Envelope;
+use Splicewire\CircuitSpineData\Ports\Port;
+use Splicewire\CircuitSpineData\Ports\PortValidationException;
 
 /**
  * Validates an {@see Envelope} against the {@see Port} it is crossing. The kernel
